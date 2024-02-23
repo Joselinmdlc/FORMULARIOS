@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ubicaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Ubicaciones</h2>
+        <form id="ubicaciones">
+            <form action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo_ubicacion">Tipo de Ubicación:</label>
+                        <input type="text" id="tipo_ubicacion" name="tipo_ubicacion">
+                    </div>
+                    <div class="form-group">
+                        <label for="identificacion">Identificación de Ubicación:</label>
+                        <input type="text" id="identificacion" name="identificacion">
+                    </div>
+                    <div class="form-group">
+                        <label for="rfc">RFC Remit/Dest:</label>
+                        <input type="text" id="rfc" name="rfc">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre Remit/Dest:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registro_tributario">Nº Registro ID Tributario:</label>
+                        <input type="text" id="registro_tributario" name="registro_tributario">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="residencia_fiscal">Residencia Fiscal:</label>
+                        <input type="text" id="residencia_fiscal" name="residencia_fiscal">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha_salida_llegada">Fecha/Hora Salida/Llegada:</label>
+                        <input type="datetime-local" id="fecha_salida_llegada" name="fecha_salida_llegada">
+                    </div>
+                </div>
+
+
+
+                <h2>Formulario de Domicilio</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" name="pais" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cPostal">Código Postal:</label>
+                        <input type="text" id="cPostal" name="cPostal" pattern="[0-9]{4,6}" required><br>
+                        <div id="cPostalError" class="alert" style="display: none;">Ingrese un
+                            código postal válido (entre 4 y 6 dígitos).</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="municipio">Municipio:</label>
+                        <input type="text" id="municipio" name="municipio" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="localidad">Localidad:</label>
+                        <input type="text" id="localidad" name="localidad" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="colonia">Colonia:</label>
+                        <input type="text" id="colonia" name="colonia" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="calle">Calle:</label>
+                        <input type="text" id="calle" name="calle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numero-exterior">Número Exterior:</label>
+                        <input type="text" id="numero-exterior" name="numero-exterior" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numero-interior">Número Interior:</label>
+                        <input type="text" id="numero-interior" name="numero-interior">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="referencia">Referencia:</label>
+                        <input type="text" id="referencia" name="referencia">
+                    </div>
+                </div>
+            </form>
+        </form>
+    </div>
+    <script>
+        const cPostalInput = document.getElementById('cPostal');
+        const cPostalError = document.getElementById('cPostalError');
+
+        cPostalInput.addEventListener('input', function () {
+            if (!cPostalInput.validity.valid) {
+                cPostalError.style.display = 'block';
+            } else {
+                cPostalError.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

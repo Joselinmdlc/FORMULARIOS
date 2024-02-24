@@ -97,3 +97,39 @@ button[type="reset"]:hover {
 .button-group {
     text-align: center;
   }
+.form-row1 {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+}
+.form-row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.form-row2 input, .form-row2 select {
+    flex: 2;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-row3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.form-row3 input, .form-row3 select {
+    flex: 2;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+span {
+    font-weight: bold;
+    margin-left: 5px;
+  }

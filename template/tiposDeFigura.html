@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de tipos de figura</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tipos de figura</h2>
+        <form id="tiposFigura">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipoFigura">Tipo Figura:</label>
+                        <select id="tipoFigura" name="tipoFigura" required>
+                            <option value="">Seleccionar</option>
+                            <option value="Operador">Operador</option>
+                            <option value="Propietario">Propietario</option>
+                            <option value="Arrendador">Arrendador</option>
+                            <option value="Notificado">Notificado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rfcFigura">RFC Figura:</label>
+                        <input type="text" id="rfcFigura" name="rfcFigura" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numeroLicencia">Número de Licencia:</label>
+                        <input type="text" id="numeroLicencia" name="numeroLicencia" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombreFigura">Nombre de la Figura:</label>
+                        <input type="text" id="nombreFigura" name="nombreFigura" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registroID">Nº Registro ID Tributaria:</label>
+                        <input type="text" id="registroID" name="registroID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="residenciaFiscal">Residencia Fiscal:</label>
+                        <select id="residenciaFiscal" name="residenciaFiscal" required>
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row1">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="checkbox" id="domicilio" name="domicilio" required>
+                </div>
+
+
+                <h4> Domicilio</h4>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country">País:</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" pattern="[0-9]{4,6}" required maxlength="5"><br>
+                        <div id="codigo_postalError" class="alert" style="display: none;">Ingrese un
+                            código postal válido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">Estado:</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Municipio:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="locality">Localidad:</label>
+                        <input type="text" id="locality" name="locality">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="neighborhood">Colonia:</label>
+                        <input type="text" id="neighborhood" name="neighborhood">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="street">Calle:</label>
+                        <input type="text" id="street" name="street" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exterior-number">Número Exterior:</label>
+                        <input type="text" id="exterior-number" name="exterior-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interior-number">Número Interior:</label>
+                        <input type="text" id="interior-number" name="interior-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="reference">Referencia:</label>
+                        <textarea id="reference" name="reference" rows="4"></textarea>
+                    </div>
+
+                </div>
+
+            </form>
+        </form>
+    </div>
+    <script src="../static/js/validacion.js"></script>
+</body>
+
+</html>

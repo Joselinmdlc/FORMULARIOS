@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de autotransporte</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Autotransporte</h2>
+        <form id="autotransporte">
+            <form action="#" method="post">
+                <div class="form-row3">
+                    <div class="form-group">
+                        <label for="tipo_permiso">Tipo de Permiso SICT:</label>
+                        <select id="tipo_permiso" name="tipo_permiso" required>
+                            <option value="">Seleccionar</option>
+                            <option value="Autotransporte Federal de carga general Federal de carga general">
+                                Autotransporte Federal de carga general</option>
+                            <option value="Autotransporte Federal de carga general">Autotransporte Federal de carga
+                                general.</option>
+                            <option value="Transporte privado de carga">Transporte privado de carga.</option>
+                            <option
+                                value="Autotransporte Federal de Carga Especializada de materiales y residuos peligrosos.">
+                                Autotransporte Federal de Carga Especializada de materiales y residuos peligrosos.
+                            </option>
+                            <option value="Transporte de automoviles sin rodar en vehiculo tipo gondola.">Transporte de
+                                automóviles sin rodar en vehículo tipo góndola.</option>
+                            <option value="Transporte de carga de gran peso y/o volumen de hasta 90 toneladas.">
+                                Transporte de carga de gran peso y/o volumen de hasta 90 toneladas.</option>
+                            <option
+                                value="Transporte de carga especializada de gran peso y/o volumen de mas 90 toneladas.">
+                                Transporte de carga especializada de gran peso y/o volumen de más 90 toneladas.</option>
+                            <option value="Transporte Privado de materiales y residuos peligrosos.">Transporte Privado
+                                de materiales y residuos peligrosos.</option>
+                            <option value="Autotransporte internacional de carga de largo recorrido.">Autotransporte
+                                internacional de carga de largo recorrido.</option>
+                            <option
+                                value="Autotransporte internacional de carga especializada de materiales y residuos peligrosos…">
+                                Autotransporte internacional de carga especializada de materiales y residuos peligros…
+                            </option>
+                            <option
+                                value="Autotransporte Federal de Carga General cuyo ambito de aplicacion comprende la franja…">
+                                Autotransporte Federal de Carga General cuyo ámbito de aplicación comprende la franja…
+                            </option>
+                            <option value="Servicio auxiliar de arrastre en las vias generales de comunicacion.">
+                                Servicio auxiliar de arrastre en las vías generales de comunicación.</option>
+                            <option
+                                value="Servicio auxiliar de servicios de arrastre, arrastre y salvamento, y depósito de vehi…">
+                                Servicio auxiliar de servicios de arrastre, arrastre y salvamento, y depósito de vehí…
+                            </option>
+                            <option value="Servicio de paqueteria y mensajeria en las vias generales de comunicacion.">
+                                Servicio de paquetería y mensajería en las vías generales de comunicación.</option>
+                            <option
+                                value="Transporte especial para el transito de gruas industriales con peso maximo de 90 tone…">
+                                Transporte especial para el tránsito de grúas industriales con peso máximo de 90 tone…
+                            </option>
+                            <option value="Servicio federal para empresas arrendadoras servicio publico federal.">
+                                Servicio federal para empresas arrendadoras servicio publico federal.</option>
+                            <option value="Empresas trasladistas de vehiculos nuevos.">Empresas trasladistas de
+                                vehículos nuevos.</option>
+                            <option value="Empresas fabricantes o distribuidoras de vehiculos nuevos.">Empresas
+                                fabricantes o distribuidoras de vehículos nuevos.</option>
+                            <option
+                                value="Autorizacion expresa para circular en los caminos y puentes de jurisdiccion federal c…">
+                                Autorización expresa para circular en los caminos y puentes de jurisdicción federal c…
+                            </option>
+                            <option value="Autotransporte Federal de Carga Especializada de fondos y valores.">
+                                Autotransporte Federal de Carga Especializada de fondos y valores.</option>
+                            <option value="Permiso no contemplado en el catalogo.">Permiso no contemplado en el
+                                catálogo.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero_permiso">Número de Permiso SICT:</label>
+                        <input type="text" id="numero_permiso" name="numero_permiso" required>
+                    </div>
+                </div>
+                <h3>Identificador Vehicular</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="configuracion_vehicular">Configuración Vehicular:</label>
+                        <select id="configuracion_vehicular" name="configuracion_vehicular" required>
+                            <option value="">Seleccionar</option>
+                            <option value="Camion Unitario 2 llantas en el eje delantero y 4 llantas en el eje trasero">
+                                Camión Unitario (2 llantas en el eje delantero y 4 llantas en el eje trasero) </option>
+                            <option value="Camion-Remolque 6 llantas en el camion y 8 llantas en remolque">
+                                Camión-Remolque (6 llantas en el camión y 8 llantas en remolque)</option>
+                            <option value="Camion-Remolque 6 llantas en el camión y 12 llantas en remolque">
+                                Camión-Remolque (6 llantas en el camión y 12 llantas en remolque)</option>
+                            <option
+                                value="Camion Unitario 2 llantas en el eje delantero y 6 o 8 llantas en los dos ejes traser…">
+                                Camión Unitario (2 llantas en el eje delantero y 6 o 8 llantas en los dos ejes traser…)
+                            </option>
+                            <option value="Camion-Remolque 10 llantas en el camion y 8 llantas en remolque">
+                                Camión-Remolque (10 llantas en el camión y 8 llantas en remolque)</option>
+                            <option value="Camion-Remolque 10 llantas en el camion y 12 llantas en remolque">
+                                Camión-Remolque (10 llantas en el camión y 12 llantas en remolque)</option>
+                            <option value="Grua de Plataforma Tipo A">Grúa de Plataforma Tipo A</option>
+                            <option value="Grua de Plataforma Tipo B">Grúa de Plataforma Tipo B</option>
+                            <option value="Grua de Plataforma Tipo C">Grúa de Plataforma Tipo C</option>
+                            <option value="Grua de Plataforma Tipo D">Grúa de Plataforma Tipo D</option>
+                            <option value="Grua de Pluma Tipo A">Grúa de Pluma Tipo A</option>
+                            <option value="Grua de Pluma Tipo B">Grúa de Pluma Tipo B</option>
+                            <option value="Grua de Pluma Tipo C">Grúa de Pluma Tipo C</option>
+                            <option value="Grua de Pluma Tipo D">Grúa de Pluma Tipo D</option>
+                            <option value="Especializado de carga Voluminosa y/o Gran Peso Servicio de Gruas">
+                                Especializado de carga Voluminosa y/o Gran Peso Servicio de Grúas</option>
+                            <option value="Servicio de Gruas">Servicio de Grúas</option>
+                            <option
+                                value="Tractocamion Articulado 6 llantas en el tractocamion y 4 llantas en el semirremolque">
+                                Tractocamión Articulado (6 llantas en el tractocamión y 4 llantas en el semirremolque)
+                            </option>
+                            <option
+                                value="Tractocamion Semirremolque-Remolque 6 llantas en el tractocamion, 4 llantas en el se... ">
+                                Tractocamión Semirremolque-Remolque (6 llantas en el tractocamión, 4 llantas en el
+                                se...)</option>
+                            <option
+                                value="Tractocamion Articulado 6 llantas en el tractocamion, 8 llantas en el semirremolque">
+                                Tractocamión Articulado (6 llantas en el tractocamión, 8 llantas en el semirremolque)
+                            </option>
+                            <option
+                                value="Tractocamion Semirremolque-Remolque 6 llantas en el tractocamion, 8 llantas en el se... ">
+                                Tractocamión Semirremolque-Remolque (6 llantas en el tractocamión, 8 llantas en el se...
+                                )</option>
+                            <option
+                                value="Tractocamion Semirremolque-Semiremolque 6 llantas en el tractocamion, 8 llantas en el se...">
+                                Tractocamión Semirremolque-Semiremolque (6 llantas en el tractocamión, 8 llantas en el
+                                se...)</option>
+                            <option
+                                value="Tractocamion Articulado 6 llantas en el tractocamion, 12 llantas en el semirremolque">
+                                Tractocamión Articulado (6 llantas en el tractocamión, 12 llantas en el semirremolque)
+                            </option>
+                            <option
+                                value="Tractocamion Articulado 10 llantas en el tractocamion, 4 llantas en el semirremolque...">
+                                Tractocamión Articulado (10 llantas en el tractocamión, 4 llantas en el
+                                semirremolque...)</option>
+                            <option
+                                value="Tractocamion Semirremolque-Remolque 10 llantas en el tractocamion, 4 llantas en el s…">
+                                Tractocamión Semirremolque-Remolque (10 llantas en el tractocamión, 4 llantas en el s…)
+                            </option>
+                            <option
+                                value="Tractocamion Articulado 10 llantas en el tractocamion, 8 llantas en el semirremolque…">
+                                Tractocamión Articulado (10 llantas en el tractocamión, 8 llantas en el semirremolque…)
+                            </option>
+                            <option
+                                value="Tractocamion Semirremolque-Remolque 10 llantas en el tractocamion, 8 llantas en el s…">
+                                Tractocamión Semirremolque-Remolque (10 llantas en el tractocamión, 8 llantas en el s…)
+                            </option>
+                            <option
+                                value="Tractocamion Semirremolque-Semirremolque 10 llantas en el tractocamion, 8 llantas en...">
+                                Tractocamión Semirremolque-Semirremolque (10 llantas en el tractocamión, 8 llantas
+                                en...)</option>
+                            <option
+                                value="Tractocamion Articulado 10 llantas en el tractocamion, 12 llantas en el semirremolqu...">
+                                Tractocamión Articulado (10 llantas en el tractocamión, 12 llantas en el
+                                semirremolqu...)</option>
+                            <option
+                                value="Tractocamion Semirremolque-Semirremolque 10 llantas en el tractocamion, 12 llantas e... ">
+                                Tractocamión Semirremolque-Semirremolque (10 llantas en el tractocamión, 12 llantas
+                                e...) </option>
+                            <option
+                                value="Vehiculo ligero de carga 2 llantas en el eje delantero y 2 llantas en el eje trasero...">
+                                Vehículo ligero de carga (2 llantas en el eje delantero y 2 llantas en el eje
+                                trasero...)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="peso_bruto_vehicular">Peso Bruto Vehicular:</label>
+                        <input type="text" id="peso_bruto_vehicular" name="peso_bruto_vehicular" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="placa_vm">Placa VM:</label>
+                        <input type="text" id="placa_vm" name="placa_vm" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modelo_vm">Año Modelo VM:</label>
+                        <select id="modelo_vm" name="modelo_vm" required>
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                </div>
+                <h3>Formulario de Seguros</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="aseguradora-rc">Aseguradora de R.C:</label>
+                        <input type="text" id="aseguradora-rc" name="aseguradora-rc" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="poliza-rc">Póliza R.C:</label>
+                        <input type="text" id="poliza-rc" name="poliza-rc" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="aseguradora-ma">Aseguradora M.A:</label>
+                        <input type="text" id="aseguradora-ma" name="aseguradora-ma" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="poliza-ma">Póliza Medio Ambiente:</label>
+                        <input type="text" id="poliza-ma" name="poliza-ma" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="aseguradora-carga">Aseguradora de Carga:</label>
+                        <input type="text" id="aseguradora-carga" name="aseguradora-carga" required>
+                    </div>
+                </div>
+                <div class="form-row3">
+                    <div class="form-group">
+                        <label for="poliza-carga">Póliza de Carga:</label>
+                        <input type="text" id="poliza-carga" name="poliza-carga" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor-prima">Valor de la prima del Seguro:</label>
+                        <input type="number" id="valor-prima" name="valor-prima" required>
+                    </div>
+                </div>
+
+            </form>
+        </form>
+    </div>
+</body>
+
+</html>

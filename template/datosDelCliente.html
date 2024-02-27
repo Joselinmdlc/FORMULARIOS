@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Datos del Cliente</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Datos del Cliente</h2>
+        <form id="datosDelCliente">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cliente_frecuente">Cliente Frecuente:</label>
+                        <input type="text" id="cliente_frecuente" name="cliente_frecuente"><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre_razon_social">Nombre o Razón Social:</label>
+                        <input type="text" id="nombre_razon_social" name="nombre_razon_social" required><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" pattern="[0-9]{4,6}" required maxlength="5"><br>
+                        <div id="codigo_postalError" class="alert" style="display: none;">Ingrese un
+                            código postal válido.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regimen_fiscal">Régimen Fiscal:</label>
+                        <select id="regimen_fiscal" name="regimen_fiscal">
+                            <option value="">Seleccionar</option>
+                            <option value="General de Ley Personas Morales">601 - General de Ley Personas Morales
+                            </option>
+                            <option value="Personas Morales con Fines no Lucrativos">603 - Personas Morales con Fines no
+                                Lucrativos</option>
+                            <option value="Sueldos y Salarios e Ingresos Asimilados a Salarios">605 - Sueldos y Salarios
+                                e Ingresos Asimilados a Salarios</option>
+                            <option value="Arrendamiento">606 - Arrendamiento</option>
+                            <option value="Regimen de Enajenacion o Adquisicion de Bienes">607 - Régimen de Enajenación
+                                o Adquisición de Bienes</option>
+                            <option value="Demas ingresos">608 - Demás ingresos</option>
+                            <option value="Consolidacion">609 - Consolidación</option>
+                            <option value="Residentes en el Extranjero sin Establecimiento Permanente en Mexico">610 -
+                                Residentes en el Extranjero sin Establecimiento Permanente en México</option>
+                            <option value="Ingresos por Dividendos socios y accionistas">611 - Ingresos por Dividendos
+                                (socios y accionistas)</option>
+                            <option value="Personas Fisicas con Actividades Empresariales y Profesionales">612 -
+                                Personas Físicas con Actividades Empresariales y Profesionales</option>
+                            <option value="Ingresos por intereses">614 - Ingresos por intereses</option>
+                            <option value="Regimen de los ingresos por obtencion de premios">615 - Régimen de los
+                                ingresos por obtención de premios</option>
+                            <option value="Sin obligaciones fiscales">616 - Sin obligaciones fiscales</option>
+                            <option value="Sociedades Cooperativas de Produccion que optan por diferir sus ingresos">620
+                                - Sociedades Cooperativas de Producción que optan por diferir sus ingresos</option>
+                            <option value="Incorporacion Fiscal">621 - Incorporación Fiscal</option>
+                            <option value="Actividades Agricolas, Ganaderas, Silvicolas y Pesqueras">622 - Actividades
+                                Agrícolas, Ganaderas, Silvícolas y Pesqueras</option>
+                            <option value="Opcional para Grupos de Sociedades">623 - Opcional para Grupos de Sociedades
+                            </option>
+                            <option value="Coordinados">624 - Coordinados</option>
+                            <option
+                                value="Regimen de las Actividades Empresariales con ingresos a traves de Plataformas Tecnologicas">
+                                625 - Régimen de las Actividades Empresariales con ingresos a través de Plataformas
+                                Tecnológicas</option>
+                            <option value="Regimen Simplificado de Confianza">626 - Régimen Simplificado de Confianza
+                            </option>
+                            <option value="Hidrocarburos">628 - Hidrocarburos</option>
+                            <option value="De los Regimenes Fiscales Preferentes y de las Empresas Multinacionales">629
+                                - De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales</option>
+                            <option value="Enajenacion de acciones en bolsa de valores">630 - Enajenación de acciones en
+                                bolsa de valores</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uso_factura">Uso de la Factura:</label>
+                        <select id="uso_factura" name="uso_factura">
+                            <option value="">Seleccionar</option>
+                            <option value="Adquisicion de mercancias">G01 - Adquisición de mercancías</option>
+                            <option value="Devoluciones descuentos o bonificaciones ">G02 - Devoluciones, descuentos o
+                                bonificaciones </option>
+                            <option value="Gastos en general">G03 - Gastos en general </option>
+                            <option value="	Construcciones">I01 - Construcciones </option>
+                            <option value="Mobiliario y equipo de oficina por inversiones">I02 - Mobiliario y equipo de
+                                oficina por inversiones</option>
+                            <option value="Equipo de transporte">I03 - Equipo de transporte</option>
+                            <option value="Equipo de computo y accesorios">I04 - Equipo de cómputo y accesorios</option>
+                            <option value="Dados troqueles moldes matrices y herramental">I05 - Dados, troqueles,
+                                moldes, matrices y herramental</option>
+                            <option value="Comunicaciones telefonicas">I06 - Comunicaciones telefónicas</option>
+                            <option value="Comunicaciones satelitales">I07 - Comunicaciones satelitales</option>
+                            <option value="Otra maquinaria y equipo">I08 - Otra maquinaria y equipo </option>
+                            <option value="Honorarios medicos dentales y gastos hospitalarios">D01 - Honorarios médicos,
+                                dentales y gastos hospitalarios</option>
+                            <option value="Gastos medicos por incapacidad o discapacidad">D02 - Gastos médicos por
+                                incapacidad o discapacidad</option>
+                            <option value="Gastos funerales">D03 - Gastos funerales</option>
+                            <option value="Donativos">D04 - Donativos</option>
+                            <option
+                                value="Intereses reales efectivamente pagados por creditos hipotecarios casa habitación">
+                                D05 - Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación)
+                            </option>
+                            <option value="Aportaciones voluntarias al SAR">D06 - Aportaciones voluntarias al SAR
+                            </option>
+                            <option value="Primas por seguros de gastos medicos">D07 - Primas por seguros de gastos
+                                médicos </option>
+                            <option value="Gastos de transportacion escolar obligatoria">D08 - Gastos de transportación
+                                escolar obligatoria </option>
+                            <option
+                                value="Depositos en cuentas para el ahorro primas que tengan como base planes de pensiones">
+                                D09 - Depósitos en cuentas para el ahorro, primas que tengan como base planes de
+                                pensiones</option>
+                            <option value="Pagos por servicios educativos colegiaturas">D10 - Pagos por servicios
+                                educativos (colegiaturas) </option>
+                            <option value="Pagos">CP01 - Pagos</option>
+                            <option value="Nomina">CN01 - Nómina</option>
+                            <option value="Sin Efectos Fiscales">S01 - Sin Efectos Fiscales</option>
+                        </select><br>
+                    </div>
+                </div>
+            </form>
+        </form>
+    </div>
+    <script src="../static/js/validacion.js"></script>
+</body>
+
+</html>

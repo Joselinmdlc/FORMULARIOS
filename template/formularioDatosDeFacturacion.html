@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Factura</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Datos de Factura</h2>
+        <form id="datosDeFactura">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="regimenFiscal">Régimen fiscal:</label>
+                        <select id="regimenFiscal" name="regimenFiscal">
+                            <option value="">Seleccionar</option>
+                            <option value="General de Ley Personas Morales">601 - General de Ley Personas Morales
+                            </option>
+                            <option value="Personas Morales con Fines no Lucrativos">603 - Personas Morales con Fines no
+                                Lucrativos</option>
+                            <option value="Sueldos y Salarios e Ingresos Asimilados a Salarios">605 - Sueldos y Salarios
+                                e Ingresos Asimilados a Salarios</option>
+                            <option value="Arrendamiento">606 - Arrendamiento</option>
+                            <option value="Regimen de Enajenacion o Adquisicion de Bienes">607 - Régimen de Enajenación
+                                o Adquisición de Bienes</option>
+                            <option value="Demas ingresos">608 - Demás ingresos</option>
+                            <option value="Consolidacion">609 - Consolidación</option>
+                            <option value="Residentes en el Extranjero sin Establecimiento Permanente en Mexico">610 -
+                                Residentes en el Extranjero sin Establecimiento Permanente en México</option>
+                            <option value="Ingresos por Dividendos socios y accionistas">611 - Ingresos por Dividendos
+                                (socios y accionistas)</option>
+                            <option value="Personas Fisicas con Actividades Empresariales y Profesionales">612 -
+                                Personas Físicas con Actividades Empresariales y Profesionales</option>
+                            <option value="Ingresos por intereses">614 - Ingresos por intereses</option>
+                            <option value="Regimen de los ingresos por obtencion de premios">615 - Régimen de los
+                                ingresos por obtención de premios</option>
+                            <option value="Sin obligaciones fiscales">616 - Sin obligaciones fiscales</option>
+                            <option value="Sociedades Cooperativas de Produccion que optan por diferir sus ingresos">620
+                                - Sociedades Cooperativas de Producción que optan por diferir sus ingresos</option>
+                            <option value="Incorporacion Fiscal">621 - Incorporación Fiscal</option>
+                            <option value="Actividades Agricolas, Ganaderas, Silvicolas y Pesqueras">622 - Actividades
+                                Agrícolas, Ganaderas, Silvícolas y Pesqueras</option>
+                            <option value="Opcional para Grupos de Sociedades">623 - Opcional para Grupos de Sociedades
+                            </option>
+                            <option value="Coordinados">624 - Coordinados</option>
+                            <option
+                                value="Regimen de las Actividades Empresariales con ingresos a traves de Plataformas Tecnologicas">
+                                625 - Régimen de las Actividades Empresariales con ingresos a través de Plataformas
+                                Tecnológicas</option>
+                            <option value="Regimen Simplificado de Confianza">626 - Régimen Simplificado de Confianza
+                            </option>
+                            <option value="Hidrocarburos">628 - Hidrocarburos</option>
+                            <option value="De los Regimenes Fiscales Preferentes y de las Empresas Multinacionales">629
+                                - De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales</option>
+                            <option value="Enajenacion de acciones en bolsa de valores">630 - Enajenación de acciones en
+                                bolsa de valores</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="codigo_postal">Código Postal:</label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" pattern="[0-9]{4,6}" required maxlength="5"><br>
+                        <div id="codigo_postalError" class="alert" style="display: none;">Ingrese un
+                            código postal válido.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fechaEmision">Fecha de Emisión:</label>
+                        <input type="date" id="fechaEmision" name="fechaEmision">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoFactura">Tipo de Factura:</label>
+                        <select id="tipoFactura" name="tipoFactura">
+                            <option value="">Seleccionar</option>
+                            <option value="Complemento porte">Complemento porte</option>
+                            <option value="Ingreso">Ingreso</option>
+                            <option value="Egreso">Egreso</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formaPago">Forma de Pago:</label>
+                        <select id="formaPago" name="formaPago">
+                            <option value="">Seleccionar</option>
+                            <option value="Por definir">Por definir</option>
+                            <option value="Efectivo">Efectivo</option>
+                            <option value="Transferencia bancaria">Transferencia bancaria</option>
+                            <option value="Tarjeta de credito">Tarjeta de crédito</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="metodoPago">Método de Pago:</label>
+                        <select id="metodoPago" name="metodoPago">
+                            <option value="">Seleccionar</option>
+                            <option value="Pago en una sola exhibicion">PUE - Pago en una solo exhibición</option>
+                            <option value="Pago diferido o parcialidades">PPD - Pago diferido o parcialidades</option>
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+        </form>
+
+    </div>
+    <script src="../static/js/validacion.js"></script>
+</body>
+
+</html>

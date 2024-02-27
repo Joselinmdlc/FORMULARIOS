@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Porte</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Carta Porte</h2>
+        <form id="cartaPorte">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo_transporte">Tipo de Transporte:</label>
+                        <select id="tipo_transporte" name="tipo_transporte">
+                            <option value="Internacional">Transporte Internacional</option>
+                            <option value="Nacional">Transporte Nacional</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="regimen_aduanero">Régimen Aduanero:</label>
+                        <input type="text" id="regimen_aduanero" name="regimen_aduanero">
+                    </div>
+                    <div class="form-group">
+                        <label for="entrada_salida">Entrada/Salida de Mercancía:</label>
+                        <input type="text" id="entrada_salida" name="entrada_salida">
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País de Origen o Destino:</label>
+                        <input type="text" id="pais" name="pais">
+                    </div>
+                    <div class="form-group">
+                        <label for="via">Vía de Entrada o Salida:</label>
+                        <input type="text" id="via" name="via">
+                    </div>
+                    <div class="form-group">
+                        <label for="distancia">Total Distancia Recorrida (en km):</label>
+                        <input type="number" id="distancia" name="distancia">
+                    </div>
+                </div>
+            </form>
+        </form>
+    </div>
+
+</body>
+
+</html>
